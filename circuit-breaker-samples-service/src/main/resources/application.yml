@@ -1,0 +1,9 @@
+spring:
+    application:
+        name: circuit-breaker-samples-service
+    config:
+        import: configserver:http://localhost:9200/
+
+server:
+    port: 0
+

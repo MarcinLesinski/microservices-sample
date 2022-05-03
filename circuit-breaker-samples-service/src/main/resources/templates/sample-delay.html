@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Greetings from Hystrix</title>
+</head>
+<body>
+<h1 th:text="${app_name}"/>
+<h1>offline fallback</h1>
+<p th:text="'hystrix web  : ' + ${hystrix_web_offline_fallback}"/>
+<p th:text="'feign web    : ' + ${feign_web_offline_fallback}"/>
+<!--<h2 th:text="'param' + ${delay_time}"/>-->
+<h1>timeout fallback</h1>
+<p th:text="'hystrix timeout: ' + ${hystrix_timeout}"/>
+<p th:text="'feign timeout: ' + ${feign_timeout}"/>
+<h1>errors</h1>
+<p th:text="'hystrix errors: ' + ${hystrix_errors}"/>
+<h1>info</h1>
+<p th:text="'numbers-provider\'s port: ' + ${numbers_provider_port}"/>
+
+
+</body>
+</html>
